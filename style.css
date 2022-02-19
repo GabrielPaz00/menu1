@@ -3,6 +3,7 @@
 	--secundary: #EAC83E;
 	--guinda:  #5b262e;
 	--blanco:  #f8f9fa;
+	--verde:  #01cd74;
 	--lightgrey: #606060;
 	--deegreen: #50a032;
 	--yellowgreen:  #9ACD30;
@@ -32,7 +33,7 @@ body {
 .nav_toggle img {
 	height: 3.4rem;
 	width: 2.6rem;
-	fill: white;
+	fill: var(--primary);
 }
 .nav_toggle .close {
 	display: none;
