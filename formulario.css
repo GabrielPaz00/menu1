@@ -1,22 +1,21 @@
 @import url("style.css") all;
-:root {
-	--primary: #1b396a;
-	--secundary: #EAC83E;
-	--guinda:  #5b262e;
-	--blanco:  #f8f9fa;
-	--verde:  #01cd74;
-	--lightgrey: #606060;
-	--deegreen: #50a032;
-	--yellowgreen:  #9ACD30;
-	--transparentblue:  #315990f0;
-}
-form {	
-	width: 540px;
+.form {	
+	width: 400px;
 	border: 1px solid var(--lightgrey);
 	border-radius: 10px;
-	margin: auto;
-	padding: 12px;
+	padding: 20px;
 	background: var(--blanco);
+	margin: auto;
+}
+@media only screen and (max-width: 560px) {
+	
+	.form {
+		display: flex;
+		flex-direction: column;
+		width: 400px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 }
 .form label, .form p {
 	font-size: 16px;
