@@ -12,9 +12,7 @@
 	.form {
 		display: flex;
 		flex-direction: column;
-		width: 400px;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		width: 340px;
 	}
 }
 .form label, .form p {
