@@ -1,0 +1,131 @@
+:root {
+	--primary: #1b396a;
+	--secundary: #EAC83E;
+	--guinda:  #5b262e;
+	--blanco:  #f8f9fa;
+	--lightgrey: #606060;
+	--deegreen: #50a032;
+	--yellowgreen:  #9ACD30;
+	--transparentblue:  #315990f0;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto,"Open Sans",sans-serif;
+	background-color: var(--blanco);
+}
+.nav {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid gray;
+	background-color: var(--primary);
+}
+.nav_toggle {
+	position: absolute;
+	cursor: pointer;
+	margin: 0 1rem;
+	right: 0;
+}
+.nav_toggle img {
+	height: 3.4rem;
+	width: 2.6rem;
+	fill: white;
+}
+.nav_toggle .close {
+	display: none;
+}
+.nav_toggle .menu, .nav_toggle .close {
+	margin-top: 0.3 rem;
+} 
+.checkbox {
+	display: none;
+}
+.nav_menu {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+	margin: 1rem;
+}
+.nav_menu li {
+	list-style: none;
+	display: none;
+	background-color: transparent;
+}
+.nav_menu a {
+	font-size: 1.2rem;
+	text-decoration: none;
+	background-color: transparent;
+	color: var(--blanco);
+}
+.nav_menu a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--yellowgreen);/*#ffffff80;*/
+}
+.nav_menu li:first-child {
+	margin-right: auto;
+	left: 0;
+	display: block;
+}
+.nav_menu .titulo {
+	margin: auto;
+	display: block;
+	
+}
+.titulo h1 {
+	text-align: center;
+	background-color: transparent;
+	color: var(--blanco);
+	text-shadow: 6px 4px 4px var(--guinda);
+}
+.titulo {
+	margin: auto;
+	display: block;
+}
+.nav_menu .logo:first-child {
+	margin-right: 0;
+	display: block;
+	left: 0;
+}
+.logo {
+	height: 90px;
+	width: 90px;
+	margin-right: auto;
+}
+.logo img{
+	height: 80px;
+
+}
+.checkbox:checked ~ ul.nav_menu li {
+	display: block;
+}
+.checkbox:checked ~ label.nav_toggle .close {
+	display: block;
+}
+.checkbox:checked ~ label.nav_toggle .menu {
+	display: none;
+}
+.menu, .close {
+	margin-top: 20px;
+}
+@media only screen and (min-width: 560px) {
+	.nav_toggle {
+		display: none;
+	}
+	.nav_menu {
+		flex-direction: row;
+
+	}
+	.nav_menu li {
+		display: block;
+	}
+	.nav_menu .logo:second-child {
+	margin:  auto;
+	display: block;
+	}
+
+}
