@@ -10,13 +10,14 @@
 @media only screen and (max-width: 560px) {
 	
 	.form {
-		display: flex;
-		flex-direction: column;
 		width: 340px;
 	}
+
 }
 .form_div {
 	margin: auto;
+
+
 }
 .form label, .form p {
 	font-size: 16px;
@@ -82,4 +83,5 @@ input[type=reset]:hover {
 input[type=reset]:active {
 	background-color: #ff4c4c;
 	border: 2px solid #ff4c4c;
+
 }
