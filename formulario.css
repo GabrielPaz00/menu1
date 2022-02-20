@@ -85,15 +85,3 @@ input[type=reset]:active {
 	border: 2px solid #ff4c4c;
 
 }
-@media only screen and (max-width: 560px) {
-	
-	input[type=submit]:after {
-	background-color: initial;
-	border: 2px solid #1db954;
-	}
-	input[type=reset]:after {
-	background-color: initial;
-	border: 2px solid #1db954;
-	}
-
-}
