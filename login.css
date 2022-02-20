@@ -1,0 +1,54 @@
+button {
+	height: 32px;
+	width: 150px;
+	border-radius: 8px;
+	background-color: var(--gris);
+	transition: 0.2s;
+    font-family: GoodTimes, sans-serif;
+}
+#login {
+	border: 1px solid var(--primary);
+}
+#login:hover {
+	background-color: #3f51b5;
+	border: 2px solid var(--primary);
+	cursor: pointer;
+	transition: 0.2s;
+	color: white;
+}
+#login:active {
+	background-color: #1f2d62;
+	border: 2px solid #1f2d62;
+	color: white;
+}
+#new_password {
+	border: 1px solid var(--lightgrey);
+}
+#new_password:hover {
+	cursor: pointer;
+	color: white;
+	border: 1px solid #1f2d62;
+	background-color: var(--verde);
+}
+#new_password:active {
+	background-color: #1db954;
+	border: 1px solid #1f2d62;
+	color: white;
+}
+#new_account {
+	border: 1px solid #01cd74;
+}
+#new_account a{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+#new_account:hover {
+	background-color: #1CDB60;
+	border: 2px solid #1DB950;
+	cursor: pointer;
+}
+#new_account:active {
+	background-color: #1db954;
+	border: 2px solid #1db954;
+}

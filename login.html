@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="formulario.css">
-	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<title>Login</title>
 </head>
 <body>
-
 	<header>
 	<!--Menú de navegación-->
 	<nav class="nav">
@@ -23,10 +23,9 @@
 				<img src="12.png">
 			</li>
 			<div class="titulo">
-				<h1>Sing in</h1>
+				<h1>Login</h1>
 			</div>
 			<li><a href="index.html">Inicio</a></li>
-			<li><a href="login.html">Login</a></li>
 			<li><a href="#">Clases</a></li>
 			<li><a href="#">Más</a></li>
 		</ul>
@@ -34,23 +33,6 @@
 	</header>
 	<br/><br/><br/><br/>
 	<form class="form">
-		<div class="personal">
-		<h2>Datos</h2>
-		<br/>	
-		<label for="nombre">Nombre</label>
-		<input type="text" name="nombre" id="nombre">
-		<label for="apellido">Apellido</label>
-		<input type="text" name="apellido" id="apellido">
-		<label for="edad">Edad &nbsp; &nbsp;</label>
-		<input type="number" name="edad"  maxlength="2" min="0" max="120" id="edad"> <br>
-		<br/>
-		<p>Selecciona tu sexo:         
-		<input type="radio" name="sexo" id="hombre">Hombre
-		<input type="radio" name="sexo" id="mujer">Mujer
-		<!--Radio perimte seleccionar sólo una opcción-->
-		</p>
-		<br/>
-		</div>
 		<div class="correo">
 		<h2>Correo y contraseña</h2>
 		<br/>
@@ -63,24 +45,14 @@
 		<input type="password" name="correo" id="contraseña" placeholder="Contraseña">
 		</div>
 		<br/>
-		<br/>
-
-		<h2>Información academica</h2>
-		<br/>
-		<label for="colonia">Selecciona tu semestre</label>
-		<select id="colonia">
-			<option value="SMT">Primero</option>
-			<option value="LDZ">Tercero</option>
-			<option value="EZ">Quinto</option>
-		</select>
+		<button id="login">Login</button>
 		<br/><br/>
-		<input type="reset" name="reset" value="Reset"> 
-		<!--Restablece los campos a sus valores predetermidados-->
-		&nbsp; &nbsp;
-		<input type="submit" name="enviar" value="Enviar" onclick="">
-		<!--Botón usado para enviar el formulario-->
+		<button id="new_password">Forgot your password?</button>
+		<br/><br/>
+		<hr>or
+		<br/><br/>
+		<button id="new_account"><a href="formulario.html">Create a new account</a></button>
 		<br/>
-
 	</form>
 	<br/><br/>
 </body>
