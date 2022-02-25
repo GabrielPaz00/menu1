@@ -89,18 +89,17 @@ body {
 	display: block;
 }
 .nav_menu .logo:first-child {
-	margin-right: 0;
+	margin-right: 80px;
 	display: block;
 	left: 0;
 }
 .logo {
 	height: 90px;
 	width: 90px;
-	margin-right: auto;
 }
 .logo img{
 	height: 80px;
-
+	width: 180px;
 }
 .checkbox:checked ~ ul.nav_menu li {
 	display: block;
@@ -125,9 +124,5 @@ body {
 	.nav_menu li {
 		display: block;
 	}
-	.nav_menu .logo:second-child {
-	margin:  auto;
-	display: block;
-	}
-
+	
 }
