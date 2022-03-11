@@ -85,3 +85,6 @@ input[type=reset]:active {
 	border: 2px solid #ff4c4c;
 
 }
+#new_password {
+	color: black;
+}
