@@ -78,15 +78,15 @@ body {
 	display: block;
 	
 }
+.titulo {
+	margin: auto;
+	display: block;
+}
 .titulo h1 {
 	text-align: center;
 	background-color: transparent;
 	color: var(--blanco);
 	text-shadow: 6px 4px 4px var(--guinda);
-}
-.titulo {
-	margin: auto;
-	display: block;
 }
 .nav_menu .logo:first-child {
 	margin-right: 80px;
@@ -124,5 +124,7 @@ body {
 	.nav_menu li {
 		display: block;
 	}
-	
+	.titulo h1 {
+		margin-left: 100px;
+	}
 }

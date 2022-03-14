@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="formulario.css">
-	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="sign_up.css">
+	<title>Regístrate</title>
 </head>
 <body>
 
@@ -23,12 +24,11 @@
 				<img src="icono.svg">
 			</li>
 			<div class="titulo">
-				<h1>Sing up</h1>
+				<h1>Regístrate</h1>
 			</div>
 			<li><a href="index.html">Inicio</a></li>
-			<li><a href="login.html">Login</a></li>
-			<li><a href="#">Clases</a></li>
-			<li><a href="#">Más</a></li>
+			<li><a href="login.html">Iniciar sesión</a></li>
+			<li><a href="sign up.html">Regístrar</a></li>
 		</ul>
 	</nav>	
 	</header>
@@ -42,7 +42,7 @@
 		<label for="apellido">Apellido</label>
 		<input type="text" name="apellido" id="apellido">
 		<label for="edad">Edad &nbsp; &nbsp;</label>
-		<input type="number" name="edad"  maxlength="2" min="0" max="120" id="edad"> <br>
+		<input type="number" name="edad"  maxlength="2" min="0" max="24" id="edad"> <br>
 		<br/>
 		<p>Selecciona tu sexo:         
 		<input type="radio" name="sexo" id="hombre">Hombre
@@ -55,23 +55,26 @@
 		<h2>Correo y contraseña</h2>
 		<br/>
 		<label for="correo">Ingresa tu correo</label>
-		<input type="email" name="correo" id="correo" placeholder="Correo"> 
+		<div class="log">
+			<input type="email" name="correo" id="correo" placeholder="Correo"> 
+		</div>
 		<!--Placeholder muestra un texto predeterminado, dicho se borra al ingresar un cárcter-->
 		<br/>
-		<br/>
 		<label for="contraseña">Ingresa tu contraseña</label>
-		<input type="password" name="correo" id="contraseña" placeholder="Contraseña">
+		<div class="log">
+			<input type="password" name="correo" id="contraseña" placeholder="Contraseña" maxlength="8">
+		</div>
 		</div>
 		<br/>
 		<br/>
 
 		<h2>Información academica</h2>
 		<br/>
-		<label for="colonia">Selecciona tu semestre</label>
-		<select id="colonia">
-			<option value="SMT">Primero</option>
-			<option value="LDZ">Tercero</option>
-			<option value="EZ">Quinto</option>
+		<label for="Semestre">Selecciona tu semestre</label>
+		<select id="Semestre">
+			<option value="A1">Primero / Segundo</option>
+			<option value="A2">Tercero / Cuarto</option>
+			<option value="A3">Quinto / Sexto</option>
 		</select>
 		<br/><br/>
 		<input type="reset" name="reset" value="Reset"> 
