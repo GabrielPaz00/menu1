@@ -101,6 +101,3 @@ input[type=reset]:active {
     border: 1px solid var(--transparentblue);
     padding: 4px;
 }
-#new_password {
-	color: black;
-}
