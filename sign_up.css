@@ -27,7 +27,8 @@
 	height: 15px;
 }
 label {
-	margin-bottom: 8px;
+	margin-bottom: 4px;
+	margin-top: 10px;
 }
 input, select {
 	border-radius: 4px;
@@ -90,7 +91,6 @@ input[type=reset]:active {
 	border: 2px solid #ff4c4c;
 
 }
-<<<<<<< HEAD:sign_up.css
 .form input[type=password], .form input[type=email] {
 	border: none;
 	outline: none;
@@ -102,8 +102,4 @@ input[type=reset]:active {
     border: 1px solid var(--transparentblue);
     padding: 4px;
 }
-=======
-#new_password {
-	color: black;
-}
->>>>>>> eb6908cac327b0865c7227d1ffc746cee462999c:formulario.css
+
