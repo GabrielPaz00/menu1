@@ -91,6 +91,7 @@ input[type=reset]:active {
 	border: 2px solid #ff4c4c;
 
 }
+
 .form input[type=password], .form input[type=email] {
 	border: none;
 	outline: none;
@@ -102,4 +103,3 @@ input[type=reset]:active {
     border: 1px solid var(--transparentblue);
     padding: 4px;
 }
-
