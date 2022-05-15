@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<link rel="stylesheet" type="text/css" href="sign_up.css">
 	<title>Regístrate</title>
@@ -28,12 +29,12 @@
 			</div>
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="login.html">Iniciar sesión</a></li>
-			<li><a href="sign up.html">Regístrar</a></li>
+			<li><a href="sign_up.html">Regístrar</a></li>
 		</ul>
 	</nav>	
 	</header>
 	<br/><br/><br/><br/>
-	<form class="form">
+	<form class="form" action="conection.php" method="post">
 		<div class="personal">
 		<h2>Datos</h2>
 		<br/>	
@@ -41,28 +42,23 @@
 		<input type="text" name="nombre" id="nombre">
 		<label for="apellido">Apellido</label>
 		<input type="text" name="apellido" id="apellido">
-		<label for="edad">Edad &nbsp; &nbsp;</label>
-		<input type="number" name="edad"  maxlength="2" min="0" max="24" id="edad"> <br>
+		<label for="age">Edad &nbsp; &nbsp;</label>
+		<input type="number" id="edad"name="age" maxlength="2" min="14" max="24"> <br>
 		<br/>
-		<p>Selecciona tu sexo:         
-		<input type="radio" name="sexo" id="hombre">Hombre
-		<input type="radio" name="sexo" id="mujer">Mujer
-		<!--Radio perimte seleccionar sólo una opcción-->
-		</p>
 		<br/>
 		</div>
 		<div class="correo">
 		<h2>Correo y contraseña</h2>
 		<br/>
-		<label for="correo">Ingresa tu correo</label>
+		<label for="email">Ingresa tu correo</label>
 		<div class="log">
-			<input type="email" name="correo" id="correo" placeholder="Correo"> 
+			<input type="email" name="email" id="email" placeholder="Correo"> 
 		</div>
 		<!--Placeholder muestra un texto predeterminado, dicho se borra al ingresar un cárcter-->
 		<br/>
-		<label for="contraseña">Ingresa tu contraseña</label>
+		<label for="password">Ingresa tu contraseña</label>
 		<div class="log">
-			<input type="password" name="correo" id="contraseña" placeholder="Contraseña" maxlength="8">
+			<input type="password" name="password" id="password" placeholder="Contraseña" maxlength="8">
 		</div>
 		</div>
 		<br/>
@@ -71,20 +67,36 @@
 		<h2>Información academica</h2>
 		<br/>
 		<label for="Semestre">Selecciona tu semestre</label>
-		<select id="Semestre">
-			<option value="A1">Primero / Segundo</option>
-			<option value="A2">Tercero / Cuarto</option>
-			<option value="A3">Quinto / Sexto</option>
+		<select id="semestre" name="semestre">
+			<option value="S1-S2">Primero / Segundo</option>
+			<option value="S3-S4">Tercero / Cuarto</option>
+			<option value="S5-S6">Quinto / Sexto</option>
 		</select>
 		<br/><br/>
 		<input type="reset" name="reset" value="Reset"> 
 		<!--Restablece los campos a sus valores predetermidados-->
 		&nbsp; &nbsp;
-		<input type="submit" name="enviar" value="Enviar" onclick="">
+		<button type="submit" id="enviar" name="enviar" onclick="mostrar()">Enviar</button>
 		<!--Botón usado para enviar el formulario-->
 		<br/>
-
 	</form>
 	<br/><br/>
+<script>
+	function mostrar() {
+		var enviar = document.getElementById('enviar');
+		var edad =  document.getElementById('edad').value;
+		var nombre = document.getElementById('nombre').value;
+		var apellido = document.getElementById('apellido').value;
+		var email = document.getElementById('email').value;
+		var password = document.getElementById('password').value;
+		if (!edad || !nombre || !apellido || !email || !password) {
+			alert("Llena todos los campos del formulario");
+			enviar.type = "button";
+		}
+		else {
+			enviar.type = "submit";
+		}
+	}
+</script>
 </body>
 </html>
