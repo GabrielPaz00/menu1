@@ -25,7 +25,7 @@
 	display:block; 
 	box-shadow: 2px 0px 3px 2px #1b396a;
 }
-.asignaturas {
+.asignaturas, .pdf-btn {
 	height: 40px;
 	max-width: 8rem;
 	padding: 1.25rem;
@@ -97,4 +97,28 @@ button {
 	align-self: center;
 	align-content: center;
 	background-color: lightgrey; border-radius: 10px;
+}
+.integral-img {
+	width: 400px;
+	border-radius: 10px;
+}
+.integral-iframe {
+	outline: none;
+	border: none;
+	border-radius: 10px;
+}
+.pdf-btn {
+	background-color: red;
+
+}
+.pdf-btn a{
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+}
+.pdf-btn:hover {
+	background-color:  #d3271b;
+}
+.pdf-btn:active {
+	background-color:  #d3271b;
 }
