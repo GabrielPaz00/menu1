@@ -122,3 +122,9 @@ button {
 .pdf-btn:active {
 	background-color:  #d3271b;
 }
+@media only screen and (max-width: 560px) {
+	.integral-img {
+	width: 200px;
+	border-radius: 10px;
+	}
+}
