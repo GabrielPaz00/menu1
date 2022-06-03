@@ -43,15 +43,15 @@
 				<div class="contenedor" align="center">
 					<nav class="nav-btn">
 						<ul>
-							<li><button class="asignaturas">Calculo Integral</button></li>
-							<li><button class="asignaturas">Calculo Diferencial</button></li>
+							<li><button class="asignaturas" onclick="mostrar(1)">Calculo Integral</button></li>
+							<li><button class="asignaturas" onclick="mostrar(2)">Calculo Diferencial</button></li>
 						</ul>
 					</nav>
 
 					<nav class="nav-btn">
 						<ul>
-							<li><button class="asignaturas">Trigonometria</button></li>
-							<li><button class="asignaturas">Geometria Analitica</button></li>
+							<li><button class="asignaturas" onclick="mostrar(3)">Trigonometria</button></li>
+							<li><button class="asignaturas" onclick="mostrar(4)">Geometria Analitica</button></li>
 						</ul>
 					</nav>
 
@@ -68,10 +68,29 @@
 		</section>
 		<br/><br/>
 		<div align="center">
-			<p>Presiona un botón para visualizar la información :)</p>
+			<p id="mensaje" style="display: block;">Presiona un botón para visualizar la información :)</p>
+
+			<div id="contenido-integral" align="center" style="display: none;">
+				Integral
+			</div>
+
+			<div id="contenido-diferencial" align="center" style="display: none;">
+				Diferencial
+			</div>
+
+			<div id="contenido-trigo" align="center" style="display: none;">
+				Trigonometria
+			</div>
+
+			<div id="contenido-analitica" align="center" style="display: none;">
+				Analitica
+			</div>
+
+
 		</div>
 		<br/><br/>
 	</article>
 </section>
+<script type="text/javascript" src="asignaturas.js"></script>
 </body>
 </html>
